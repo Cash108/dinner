@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bkg_16"
+    tools:context="com.linjichuan.www.login.Login">
+
+    <!--Register大logo-->
+    <TextView
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/SignInLogo"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--线性布局 登录框-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/SignInLogo"
+        android:weightSum="1">
+
+        <!--手机号输入框-->
+        <!--手机号文本-->
+        <TextView
+            android:text="手机号:"
+            android:textColor="#a6161616"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="12sp"
+            android:id="@+id/userNameText" />
+        <!--输入框-->
+        <EditText
+            android:inputType="number"
+            android:ems="10"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="45dp"
+            android:background="#00fcfcfc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/userNameEdit" />
+        <!--输入框的下划线-->
+        <View
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="250dp"
+            android:layout_height="3px"
+            android:background="#76050303" />
+
+
+        <!--手机验证码-->
+        <!--验证码文本-->
+        <TextView
+            android:text="验证码:"
+            android:textColor="#a6161616"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:id="@+id/CheckNumberText" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <!--验证码输入框-->
+            <EditText
+                android:inputType="number"
+                android:ems="10"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="45dp"
+                android:background="#00fcfcfc"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/userCheckNumber" />
+
+            <!--获取验证码按钮-->
+            <Button
+                android:text="获取验证码"
+                android:layout_marginLeft="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/msgcard"
+                android:textColor="#a6161616"
+                android:id="@+id/button" />
+        </LinearLayout>
+        <!--验证码输入框的下划线-->
+        <View
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="150dp"
+            android:layout_height="3px"
+            android:background="#76050303" />
+
+
+        <!--密码-->
+        <!--密码文本-->
+        <TextView
+            android:text="密码:"
+            android:textColor="#a6161616"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="12sp"
+            android:id="@+id/pswText" />
+        <!--密码输入框-->
+        <EditText
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="45dp"
+            android:background="#00fcfcfc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/pswEdit" />
+        <!--输入框的下划线-->
+        <View
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="250dp"
+            android:layout_height="3px"
+            android:background="#76050303" />
+
+
+        <!--确认密码-->
+        <!--确认密码文本-->
+        <TextView
+            android:text="确认密码:"
+            android:textColor="#a6161616"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="12sp"
+            android:id="@+id/pswText2" />
+        <!--确认密码输入框-->
+        <EditText
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="45dp"
+            android:background="#00fcfcfc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/pswEdit2" />
+        <!--输入框的下划线-->
+        <View
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="250dp"
+            android:layout_height="3px"
+            android:background="#76050303" />
+
+
+        <!--取消、确认按钮-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <!--取消按钮-->
+            <Button
+                android:text="Cansel"
+                android:textStyle="bold"
+                android:textColor="#a6161616"
+                android:layout_width="-10dp"
+                android:layout_height="30dp"
+                android:id="@+id/CancelBtn"
+                android:background="@drawable/msgcard"
+                android:layout_weight="1" />
+
+            <!--确定按钮-->
+            <Button
+                android:text="Login"
+                android:layout_marginLeft="10dp"
+                android:textColor="#a6161616"
+                android:textStyle="bold"
+                android:layout_width="-10dp"
+                android:layout_height="30dp"
+                android:id="@+id/LoginBtn"
+                android:background="@drawable/msgcard"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

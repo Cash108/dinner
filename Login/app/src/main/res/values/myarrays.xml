@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item>西餐</item>
+        <item>日本餐</item>
+        <item>东南亚菜</item>
+        <item>粤菜</item>
+        <item>湘菜</item>
+        <item>川菜</item>
+        <item>东北菜</item>
+    </string-array>
+
+</resources>

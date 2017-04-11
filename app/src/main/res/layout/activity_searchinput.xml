@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    tools:context="com.linjichuan.www.login.Login">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/bkg_16">
+        <!--左上角返回按钮-->
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_back"
+            android:drawableLeft="@drawable/btn_back"
+            android:background="#00ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:inputType="text"
+            android:text="请输入餐厅名称"
+            android:textColor="#7b050404"
+            android:paddingLeft="15dp"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:background="@drawable/roundmsgcard"
+            android:drawableRight="@drawable/btn_search"
+/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

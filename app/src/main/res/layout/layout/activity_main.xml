@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="1dp"
-    tools:context="com.example.admin.test1.main">
+    tools:context="com.example.admin.test.main">
 
 
     <!--页面上方写用户名的文本框-->
@@ -18,22 +18,15 @@
         android:layout_below="@+id/fabu">
 
         <ListView
-
-            android:id="@+id/goodsinfoListView"
-
-            android:layout_width="wrap_content"
-
-            android:layout_height="354dp"
-
-            android:layout_marginBottom="5.0dip"
-
-            android:layout_marginRight="5.0dip"
-
-            android:textColor="#000"
-
-            android:textSize="16.0dip">
-
-        </ListView>
+            android:layout_width="match_parent"
+            android:layout_height="412dp"
+            android:layout_below="@+id/fabu"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/MyListView">
+            </ListView>
     </LinearLayout>
 
     <TextView

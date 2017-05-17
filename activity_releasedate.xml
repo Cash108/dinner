@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/bkg_8"
+    android:orientation="vertical">
+
+
+    <!--页面上方写"发布饭约”的文本框-->
+    <TextView
+        android:text="发布饭约"
+        android:textSize="23sp"
+        android:layout_width="1080dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bkg_25"
+        android:gravity="center"
+        android:id="@+id/textView2" />
+
+
+    <!--左上角返回按钮-->
+
+    <!--发布按钮-->
+    <Button
+        android:text="发布"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00ffffff"
+        android:id="@+id/release" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:rowCount="10"
+        android:columnCount="4"
+        android:gravity="left"
+        android:stretchMode="none"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--时间选择项-->
+        <TextView
+            android:text="日期"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:id="@+id/textviewDate"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            >
+            <TextView
+                android:paddingTop="0dp"
+                android:textSize="16sp"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:ems="10"
+                android:background="@drawable/underline"
+                android:id="@+id/dateChoose"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/dateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="选择日期"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/timebtn"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:text="时间"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+
+            android:id="@+id/textviewTime"
+            android:gravity="center"
+            />
+    <LinearLayout
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+ >
+        <TextView
+            android:paddingTop="0dp"
+            android:textSize="16sp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:ems="10"
+            android:background="@drawable/underline"
+            android:id="@+id/timeChoose"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/timeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="选择时间"
+            android:background="@drawable/timebtn"
+           />
+    </LinearLayout>
+
+        <!--餐厅填写项-->
+        <TextView
+            android:text="餐厅名"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:id="@+id/textviewDR"
+            />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="310dp"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+            android:paddingTop="0dp"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edittextDR"
+            android:background="@drawable/underline"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            />
+
+        <!--菜系选择项-->
+        <EditText
+            android:text="请选择菜系"
+            android:paddingTop="0dp"
+            android:textSize="16sp"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:ems="10"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:background="@drawable/underline"
+            android:id="@+id/edittextFood"
+            android:gravity="center"
+            />
+
+        <!--地区选择项-->
+        <TextView
+            android:text="地区"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/textviewAddress"
+            android:gravity="center"
+            />
+
+        <!--详细街道填写项-->
+        <TextView
+            android:text="街道地址"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="6"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+
+            android:gravity="center"
+            android:id="@+id/textviewStreet" />
+
+        <!--人数上限选择项-->
+        <TextView
+            android:text="人数上限"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="7"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/textviewPeople"
+            android:gravity="center"
+            />
+        <EditText
+            android:textSize="16sp"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_column="2"
+            android:layout_row="7"
+            android:ems="10"
+            android:background="@drawable/underline"
+            android:id="@+id/edittextPeople"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"/>
+        <!--人数上限选择项-->
+        <TextView
+            android:text="人数下限"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="8"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/textviewMinPeople"
+            android:gravity="center"
+            />
+        <EditText
+            android:textSize="16sp"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_column="2"
+            android:layout_row="8"
+            android:ems="10"
+            android:background="@drawable/underline"
+            android:id="@+id/edittextMinPeople"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"/>
+
+        <!--介绍信息填写项-->
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="310dp"
+            android:layout_column="2"
+            android:layout_row="8"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:inputType="number"
+            android:ems="10"
+            android:background="@drawable/underline"
+            android:id="@+id/edittextPhone"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:textSize="16sp"
+            />
+
+
+        <TextView
+            android:text="联系电话"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="9"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+
+            android:paddingTop="15dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/texttiewPhone"
+            />
+
+        <EditText
+            android:paddingTop="0dp"
+            android:textSize="16sp"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:layout_column="2"
+            android:layout_row="5"
+            android:ems="10"
+            android:background="@drawable/underline"
+            android:id="@+id/edittextAddress"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="菜系"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+
+
+            android:id="@+id/textviewFood"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="310dp"
+            android:layout_gravity="top"
+            android:layout_column="2"
+            android:layout_row="6"
+            android:inputType="text"
+            android:ems="10"
+            android:background="@drawable/underline"
+            android:id="@+id/edittextStreet"
+            android:paddingTop="0dp"
+
+            android:gravity="center_vertical"
+            android:textSize="16sp"/>
+
+    </GridLayout>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button_back"
+        android:background="@drawable/btn_back1"
+        android:layout_alignBottom="@+id/release"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <!--<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/gridLayout"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#76050303"
+            android:gravity="right">
+
+
+            <Button
+                android:text="发布"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:id="@+id/button_release"
+                android:background="#fca300"/>
+
+        </LinearLayout>-->
+</LinearLayout>

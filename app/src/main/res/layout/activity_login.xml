@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg_16"
+    tools:context="com.linjichuan.www.login.Login">
+
+<!--SignIn大logo-->
+    <TextView
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/SignInLogo"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+<!--线性布局 登录框-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/SignInLogo"
+        android:weightSum="1">
+
+<!--手机号输入框-->
+        <!--username文本-->
+        <TextView
+            android:text="User Name:"
+            android:textColor="#a6161616"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"
+            android:id="@+id/userNameText" />
+
+        <!--输入框-->
+        <EditText
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="45dp"
+            android:background="#49fcfcfc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/userNameEdit"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"/>
+
+        <!--输入框的下划线-->
+        <View
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="250dp"
+            android:layout_height="3px"
+            android:background="#76050303" />
+
+        <!--密码输入框-->
+        <!--Password文本-->
+        <TextView
+            android:text="Password:"
+            android:textColor="#a6161616"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"
+            android:id="@+id/pswText" />
+
+        <!--Password输入框-->
+        <EditText
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="45dp"
+            android:background="#49fcfcfc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/pswEdit"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"/>
+
+        <!--输入框的下划线-->
+        <View
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="250dp"
+            android:layout_height="3px"
+            android:background="#76050303" />
+
+<!--取消按钮和登录按钮-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <!--取消按钮-->
+            <Button
+                android:text="Cansel"
+                android:textStyle="bold"
+                android:textColor="#a6161616"
+                android:layout_width="-10dp"
+                android:layout_height="30dp"
+                android:id="@+id/CancelBtn"
+                android:background="@drawable/msgcard"
+                android:layout_weight="1" />
+
+            <!--确定按钮-->
+            <Button
+                android:text="Login"
+                android:layout_marginLeft="10dp"
+                android:textColor="#a6161616"
+                android:textStyle="bold"
+                android:layout_width="-10dp"
+                android:layout_height="30dp"
+                android:id="@+id/LoginBtn"
+                android:background="@drawable/msgcard"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!--忘记密码 超链接-->
+        <TextView
+            android:text="Forgot my password?"
+            android:gravity="center"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.12" />
+
+
+    </LinearLayout>
+
+
+    <!--视图下方的注册text-->
+    <TextView
+        android:text="Register"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:id="@+id/RegisterText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        />
+    <View
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="3px"
+        android:background="#76050303"
+        android:layout_alignBottom="@id/RegisterText"
+        android:layout_marginLeft="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
